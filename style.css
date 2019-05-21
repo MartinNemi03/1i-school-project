@@ -2,6 +2,7 @@
 
 body {
     background-color: #333333;
+    min-width: 500px;
 }
 
 p, ol {
@@ -15,6 +16,7 @@ ul {
 
 .jumbotron {
     background-color: #595959;
+    border-bottom: 2px solid black;
 }
 
 /* Nadpis stránky v Headeru */
@@ -40,6 +42,35 @@ ul {
     color: white;
 }
 
+.platform-link:link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.platform-link:hover {
+    text-decoration: underline;
+}
+
+.platform-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.platform-link-dark:link {
+    color: #282828;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.platform-link-dark:hover {
+    text-decoration: underline;
+}
+
+.platform-link-dark:visited {
+    color: #282828;
+    text-decoration: none;
+}
 /* jen dekorace tlačítek lul */
 
 .btn {
@@ -55,7 +86,24 @@ ul {
     font-style: italic;
 }
 
+/* spodní text ve footru, který stejnak nikdo nečte */
+
 .footer-text {
+    padding: 2px;
+    background-color: rgba(0,0,0,0.2);
     font-family: 'Inconsolata', monospace;
-    margin: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;;
 }
+
+/* easter egg animace ve stránce "Platformy", protože mě nic lepšího nenapadlo */
+
+.logoRotate {
+    animation: logo-rotate 3s ease;
+}
+
+@keyframes logo-rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  

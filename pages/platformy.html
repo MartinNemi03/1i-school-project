@@ -25,6 +25,8 @@
             </div>
         </div>
     </header>   
+    
+    <!-- Tady jsem napsal o 3 nejpopulárnějších platformách z mého pohledu, i když je jich jako řepky na poli. Z mého pohledu používám hlavně Twitch, proto jsem napsal hodně hlavně o Twitchi, protože Twitch > Mixer > YouTube, ale to je čistě můj názor ohledně platforem. --> 
 
     <div class="container">
         <div class="row text-left">
@@ -41,18 +43,24 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <h2 class="text-center title-font" style="background-color: #6441A4; padding: 5px; border-radius: 10px;">
-                    <img src="../img/twitch_logo.png" style="height: 22px; margin-bottom: 5px;"> <b>Twitch</b>
+                    <img src="../img/twitch_logo.png" onClick="logoRotate('twitch')" style="height: 22px; margin-bottom: 5px;" id="twitch_logo"> <a href="https://www.twitch.tv/" target="_blank" class="platform-link">Twitch</a>
                 </h2>
-            </div>
-            <div class="col-md-1"></div>
+                <!-- Ano, to je jedna ze stránek, která je blocknutá ve školní síti.. -->
+                <p>Twitch je prakticky mezi streamovacími platformami jedna z nejstarších a nejpopulárnějších. Nabízí mnoho služeb jako samotné streamování, hostování, nájezdy na ostatní streamery, vlastní profil, propracovanou API, extensiony (které přidavají mnoho dalších fukncí) atd. </p>
+                <p>Pro malé streamery je tu možnost vydělávat peníze přes <b>Affiliate</b> program, do kterého se můžou zapojit automaticky po splnění pár podmínek. Tento program jim pak nabízí monetizaci přes Předplatné, prodeje her přes Twitch aplikaci, bity a umožnuje jim nahrát svoje vlastní emotikony pro předplatilele, vlastní odznaky pro jak předplatele, tak i přispěvatele přes bity atd.</p> 
+                <p>Pro větší streamery tady pak je <b>Partner</b> program. Ten nabízí větší procenta z monetizačních funkcí pro Affiliate, možnost pouštět reklamy kdy se vám chce, získávat příjmy z reklamy, neustálá možnost pro diváky přepínat kvalitu**, "Verified" odznak pro vás viditelný po celým Twitchi, společné streamování s dalšími streamery**, více vlastních odznáčků pro předplatitele atd. </p>
+                <p><i><sub>** Brzy dostupné i pro Affiliate</sub></i></p>
+            </div>    
+          <div class="col-md-1"></div>
         </div>
         <hr>
         <div class="row text-left">
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <h2 class="text-center title-font" style="background-color: #FFFFFF; padding: 5px; border-radius: 10px;color:#282828;">
-                    <img src="../img/youtube_logo.png" style="height: 22px; margin-bottom: 3px;"> <b>YouTube</b>
+                    <img src="../img/youtube_logo.png" onClick="logoRotate('youtube')" style="height: 22px; margin-bottom: 3px;" id="youtube_logo"> <a href="https://www.twitch.tv/" target="_blank" class="platform-link-dark">YouTube</a>
                 </h2>
+                <p>YouTube je už hodně dlouhou dobu nejsledovanější video platforma, na kterou jdou nahrávat videa už od roku <b>2005</b> a tím si vybudoval silnou pozici na obecném internetu. Díky tomu si taky mohli dovolit přidat na svou platformu živá vysílání  </p>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -61,7 +69,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <h2 class="text-center title-font" style="background-color: #29374a; padding: 5px; border-radius: 10px;">
-                    <img src="../img/mixer_logo.png" style="height: 22px; margin-bottom: 5px;"> <b>Mixer</b>
+                    <img src="../img/mixer_logo.png" onClick="logoRotate('mixer')" style="height: 22px; margin-bottom: 5px;" id="mixer_logo"> <b>Mixer</b>
                 </h2>
             </div>
             <div class="col-md-1"></div>
@@ -73,5 +81,37 @@
         <div class="text-center">
             <p class="footer-text">[ Made by Martin Němeček (2019) - <a href="https://github.com/MartinNemi03/1i-school-project" target="_blank">GitHub</a> ]</p>
         </div>
-    </footer>  
+    </footer> 
+    
+    <script>
+    function logoRotate(plat) {
+        if (plat === "twitch") {
+            var logo = document.getElementById("twitch_logo");
+
+            logo.setAttribute( "class", logoRotate );
+            setTimeout( function() {
+                logo.setAttribute( "class", "" );
+            }, 3000);
+        }
+
+        if (plat === "youtube") {
+            var logo = document.getElementById("youtube_logo");
+
+            logo.setAttribute( "class", logoRotate );
+            setTimeout( function() {
+                logo.setAttribute( "class", "" );
+            }, 3000);
+        }
+
+        if (plat === "mixer") {
+            var logo = document.getElementById("mixer_logo");
+
+            logo.setAttribute( "class", logoRotate );
+            setTimeout( function() {
+                logo.setAttribute( "class", "" );
+            }, 3000);
+        }
+    }
+    </script>
+
 </body>
