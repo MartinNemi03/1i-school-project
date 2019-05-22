@@ -19,6 +19,13 @@ ul {
     border-bottom: 2px solid black;
 }
 
+/* iframe v indexu */
+
+.index-iframe {
+  width: 560px;
+  height: 315px;
+}
+
 /* Nadpis stránky v Headeru */
 
 #header-title:link {
@@ -94,6 +101,20 @@ ul {
     font-family: 'Inconsolata', monospace;
     margin-top: 2%;
     margin-bottom: 2%;;
+}
+
+/* RESPONSIVNÍ STYL */
+
+@media screen and (max-width: 767px) {
+  .index-iframe {
+    width: 450px;
+    height: 255px;
+  }
+  
+  .btn {
+    padding: 4px;
+  }
+
 }
 
 /* easter egg animace ve stránce "Platformy", protože mě nic lepšího nenapadlo */
