@@ -1,122 +1,178 @@
 <head>
-    
-    <title>Platformy | Streamování</title>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>Platformy | Streamování</title>
 
-    <link href="../style.css" rel="stylesheet">
-    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link href="../style.css" rel="stylesheet" />
 </head>
 
-
 <body>
-    
-   <header>
-        <div class="jumbotron text-center">
-            <h1 class="title-font">[ <a href="../index.html" id="header-title">Streamování</a> ]</h1>
-            <div class="btn-group">
-                <button onclick="window.location.assign('./jak-zacit.html')" type="button" class="btn btn-default btn-sm"><b>Jak začít</b></button>
-                <button onclick="window.location.assign('./monetizace.html')" type="button" class="btn btn-default btn-sm"><b>Monetizace</b></button>
-                <button type="button" class="btn btn-default btn-sm btn-page-active"><b>Platformy</b></button>
-                <button onclick="window.location.assign('./historie.html')" type="button" class="btn btn-default btn-sm"><b>Historie</b></button>
-                <button onclick="window.location.assign('./streameri.html')" type="button" class="btn btn-default btn-sm"><b>Streameři</b></button>
-            </div>
-        </div>
-    </header>   
-    
-    <!-- Tady jsem napsal o 3 nejpopulárnějších platformách z mého pohledu, i když je jich jako řepky na poli. Z mého pohledu používám hlavně Twitch, proto jsem napsal hodně hlavně o Twitchi, protože Twitch > Mixer > YouTube, ale to je čistě můj názor ohledně platforem. --> 
-
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <blockquote>
-                    <p>V této sekci se podíváme na základní informace o 3 platformách a jejich výhody + nevýhody. Twitch, YouTube a Mixer. Historie o každé z nich je v sekci [ <button onclick="window.location.assign('./historie.html')" type="button" class="btn btn-default btn-sm"><b>Historie</b></button> ].</p>
-                </blockquote>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <hr>
-        <div class="row text-left">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <h2 class="text-center title-font" style="background-color: #6441A4; padding: 5px; border-radius: 10px;">
-                    <img src="../img/twitch_logo.png" onClick="logoRotate('twitch')" style="height: 22px; margin-bottom: 5px;" id="twitch_logo"> <a href="https://www.twitch.tv/" target="_blank" class="platform-link">Twitch</a>
-                </h2>
-                <!-- Ano, to je jedna ze stránek, která je blocknutá ve školní síti.. -->
-                <p>Twitch je prakticky mezi streamovacími platformami jedna z nejstarších a nejpopulárnějších. Nabízí mnoho služeb jako samotné streamování, hostování, nájezdy na ostatní streamery, vlastní profil, propracovanou API, extensiony (které přidavají mnoho dalších fukncí) atd. </p>
-                <p>Pro malé streamery je tu možnost vydělávat peníze přes <b>Affiliate</b> program, do kterého se můžou zapojit automaticky po splnění pár podmínek. Tento program jim pak nabízí monetizaci přes Předplatné, prodeje her přes Twitch aplikaci, bity a umožnuje jim nahrát svoje vlastní emotikony pro předplatilele, vlastní odznaky pro jak předplatele, tak i přispěvatele přes bity atd.</p> 
-                <p>Pro větší streamery tady pak je <b>Partner</b> program. Ten nabízí větší procenta z monetizačních funkcí pro Affiliate, možnost pouštět reklamy kdy se vám chce, získávat příjmy z reklamy, neustálá možnost pro diváky přepínat kvalitu**, "Verified" odznak pro vás viditelný po celým Twitchi, společné streamování s dalšími streamery**, více vlastních odznáčků pro předplatitele atd. </p>
-                <p><i><sub>** Brzy dostupné i pro Affiliate</sub></i></p>
-            </div>    
-          <div class="col-md-1"></div>
-        </div>
-        <hr>
-        <div class="row text-left">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <h2 class="text-center title-font" style="background-color: #FFFFFF; padding: 5px; border-radius: 10px;color:#282828;">
-                    <img src="../img/youtube_logo.png" onClick="logoRotate('youtube')" style="height: 22px; margin-bottom: 3px;" id="youtube_logo"> <a href="https://www.youtube.com/" target="_blank" class="platform-link-dark">YouTube</a>
-                </h2>
-                <p>YouTube je už hodně dlouhou dobu nejsledovanější video platforma, na kterou jdou nahrávat videa už od roku <b>2005</b> a tím si vybudoval silnou pozici na obecném internetu. Díky tomu si taky mohli dovolit přidat na svou platformu živá vysílání.</p>
-                <p>Žívá vysílání si zde můžete odemknout po splnění pár základních podmínek, pak se vám tahle možnost může vypnout, pokud porušíte nějakou ze zásad platformy nebo jen pustíte písničku bez licence.</p>
-                <p>Monetizace zde funguje díky programu <b>YouTube Partner</b>, avšak na území České republiky zatím nenabízí* takové monetizační možnosti jako v zemích Eurozóny včetně Slovenska. V ČR můžete spoléhat jen na příspěvky přes třetí stranu nebo reklamy přes Google AdSense.</p>
-                <p>Tam YouTube nabízí třeba kanálové předplatné na styl Patreonu, kde platíte měsiční podplatek tvůrci za určité výhody, Superchat, kde vám YouTube zvýrazní na určitou dobu vaši zprávu za vámi určenou částku a další.</p>
-                <p><i><sub>* Může se časem změnit díky příchodu YouTube Premium do České republiky a tím pádem podpory české koruny ze strany YouTube</sub></i></p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <hr>
-        <div class="row text-left">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <h2 class="text-center title-font" style="background-color: #29374a; padding: 5px; border-radius: 10px;">
-                    <img src="../img/mixer_logo.png" onClick="logoRotate('mixer')" style="height: 22px; margin-bottom: 5px;" id="mixer_logo"> <a href="https://mixer.com/" target="_blank" class="platform-link">Mixer</a>
-                </h2>
-                <p>Nejnovější z třech vybraných, Mixer je streamovací platforma </p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <hr>
+  <header>
+    <div class="jumbotron text-center">
+      <h1 class="title-font">[ <a href="../index.html" id="header-title">Streamování</a> ]</h1>
+      <div class="btn-group">
+        <button onclick="window.location.assign('./jak-zacit.html')" type="button" class="btn btn-default btn-sm">
+          <b>Jak začít</b>
+        </button>
+        <button onclick="window.location.assign('./monetizace.html')" type="button" class="btn btn-default btn-sm">
+          <b>Monetizace</b>
+        </button>
+        <button type="button" class="btn btn-default btn-sm btn-page-active">
+          <b>Platformy</b>
+        </button>
+        <button onclick="window.location.assign('./historie.html')" type="button" class="btn btn-default btn-sm">
+          <b>Historie</b>
+        </button>
+        <button onclick="window.location.assign('./streameri.html')" type="button" class="btn btn-default btn-sm">
+          <b>Streameři</b>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <footer>
-        <div class="text-center">
-            <p class="footer-text">[ Made by Martin Němeček (2019) - <a href="https://github.com/MartinNemi03/1i-school-project" target="_blank">GitHub</a> ]</p>
-        </div>
-    </footer> 
-    
-    <script>
+  <!-- Tady jsem napsal o 3 nejpopulárnějších platformách z mého pohledu, i když je jich jako řepky na poli. Z mého pohledu používám hlavně Twitch, proto jsem napsal hodně hlavně o Twitchi, protože Twitch > Mixer > YouTube, ale to je čistě můj názor ohledně platforem. -->
+
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <blockquote>
+          <p>
+            V této sekci se podíváme na základní informace o 3 platformách a jejich výhody + nevýhody. Twitch, YouTube a Mixer. Historie o každé z
+            nich je v sekci [
+            <button onclick="window.location.assign('./historie.html')" type="button" class="btn btn-default btn-sm">
+              <b>Historie</b>
+            </button>
+            ].
+          </p>
+        </blockquote>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <hr />
+    <div class="row text-left">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h2 class="text-center title-font" style="background-color: #6441A4; padding: 5px; border-radius: 10px;">
+          <img src="../img/twitch_logo.png" onClick="logoRotate('twitch')" style="height: 22px; margin-bottom: 5px;" id="twitch_logo" />
+          <a href="https://www.twitch.tv/" target="_blank" class="platform-link">Twitch</a>
+        </h2>
+        <!-- Ano, to je jedna ze stránek, která je blocknutá ve školní síti.. -->
+        <p>
+          Twitch je prakticky mezi streamovacími platformami jedna z nejstarších a nejpopulárnějších. Nabízí mnoho služeb jako samotné streamování,
+          hostování, nájezdy na ostatní streamery, vlastní profil, propracovanou API, extensiony (které přidavají mnoho dalších fukncí) atd.
+        </p>
+        <p>
+          Pro malé streamery je tu možnost vydělávat peníze přes
+          <b>Affiliate</b> program, do kterého se můžou zapojit automaticky po splnění pár podmínek. Tento program jim pak nabízí monetizaci přes
+          Předplatné, prodeje her přes Twitch aplikaci, bity a umožnuje jim nahrát svoje vlastní emotikony pro předplatilele, vlastní odznaky pro jak
+          předplatele, tak i přispěvatele přes bity atd.
+        </p>
+        <p>
+          Pro větší streamery tady pak je <b>Partner</b> program. Ten nabízí větší procenta z monetizačních funkcí pro Affiliate, možnost pouštět
+          reklamy kdy se vám chce, získávat příjmy z reklamy, neustálá možnost pro diváky přepínat kvalitu**, "Verified" odznak pro vás viditelný po
+          celým Twitchi, společné streamování s dalšími streamery**, více vlastních odznáčků pro předplatitele atd.
+        </p>
+        <p class="sub">
+          <i>** Brzy dostupné i pro Affiliate</i>
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <hr />
+    <div class="row text-left">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h2 class="text-center title-font" style="background-color: #FFFFFF; padding: 5px; border-radius: 10px;color:#282828;">
+          <img src="../img/youtube_logo.png" onClick="logoRotate('youtube')" style="height: 22px; margin-bottom: 3px;" id="youtube_logo" />
+          <a href="https://www.youtube.com/" target="_blank" class="platform-link-dark">YouTube</a>
+        </h2>
+        <p>
+          YouTube je už hodně dlouhou dobu nejsledovanější video platforma, na kterou jdou nahrávat videa už od roku <b>2005</b> a tím si vybudoval
+          silnou pozici na obecném internetu. Díky tomu si taky mohli dovolit přidat na svou platformu živá vysílání.
+        </p>
+        <p>
+          Žívá vysílání si zde můžete odemknout po splnění pár základních podmínek, pak se vám tahle možnost může vypnout, pokud porušíte nějakou ze
+          zásad platformy nebo jen pustíte písničku bez licence.
+        </p>
+        <p>
+          Monetizace zde funguje díky programu <b>YouTube Partner</b>, avšak na území České republiky zatím nenabízí* takové monetizační možnosti jako
+          v zemích Eurozóny včetně Slovenska. V ČR můžete spoléhat jen na příspěvky přes třetí stranu nebo reklamy přes Google AdSense.
+        </p>
+        <p>
+          Tam YouTube nabízí třeba kanálové předplatné na styl Patreonu, kde platíte měsiční podplatek tvůrci za určité výhody, Superchat, kde vám
+          YouTube zvýrazní na určitou dobu vaši zprávu za vámi určenou částku a další.
+        </p>
+        <p class="sub">
+          <i>* Může se časem změnit díky příchodu YouTube Premium do České republiky a tím pádem podpory české koruny ze strany YouTube</i>
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <hr />
+    <div class="row text-left">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h2 class="text-center title-font" style="background-color: #29374a; padding: 5px; border-radius: 10px;">
+          <img src="../img/mixer_logo.png" onClick="logoRotate('mixer')" style="height: 22px; margin-bottom: 5px;" id="mixer_logo" />
+          <a href="https://mixer.com/" target="_blank" class="platform-link">Mixer</a>
+        </h2>
+        <p>
+          Nejnovější z třech vybraných, Mixer je streamovací platforma, která se snaží přidávat funkce, které nebyli na streamovacích platformách
+          ještě k vidění, jako levelovací systém, měnu "Sparks" s kterou můžete posílat samolepky a mnoho dalšího.
+        </p>
+        <p>
+          Zatím nemá platforma moc co nabídnout pro české publikum, díky tomu není na Mixeru hodně českých díváků, ale pro celosvětové publikum má
+          hodně velký potenciál a hlavně její pozice pod Microsoftem, kterým byla odkoupena a přejmenována z Beam na Mixer.
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <hr />
+  </div>
+
+  <footer>
+    <div class="text-center">
+      <p class="footer-text">
+        [ Made by Martin Němeček (2019) -
+        <a href="https://github.com/MartinNemi03/1i-school-project" target="_blank">GitHub</a>
+        ]
+      </p>
+    </div>
+  </footer>
+
+  <script>
     function logoRotate(plat) {
-        if (plat === "twitch") {
-            var logo = document.getElementById("twitch_logo");
+      if (plat === "twitch") {
+        var logo = document.getElementById("twitch_logo");
+        console.log("jedu");
 
-            logo.setAttribute( "class", logoRotate );
-            setTimeout( function() {
-                logo.setAttribute( "class", "" );
-            }, 3000);
-        }
+        logo.setAttribute("class", "logoRotateAnim");
+        setTimeout(function() {
+          logo.setAttribute("class", "");
+          console.log("nejedu");    
+        }, 3000);
+      }
 
-        if (plat === "youtube") {
-            var logo = document.getElementById("youtube_logo");
+      if (plat === "youtube") {
+        var logo = document.getElementById("youtube_logo");
 
-            logo.setAttribute( "class", logoRotate );
-            setTimeout( function() {
-                logo.setAttribute( "class", "" );
-            }, 3000);
-        }
+        logo.setAttribute("class", "logoRotateAnim");
+        setTimeout(function() {
+          logo.setAttribute("class", "");
+        }, 3000);
+      }
 
-        if (plat === "mixer") {
-            var logo = document.getElementById("mixer_logo");
+      if (plat === "mixer") {
+        var logo = document.getElementById("mixer_logo");
 
-            logo.setAttribute( "class", logoRotate );
-            setTimeout( function() {
-                logo.setAttribute( "class", "" );
-            }, 3000);
-        }
+        logo.setAttribute("class", "logoRotateAnim");
+        setTimeout(function() {
+          logo.setAttribute("class", "");
+        }, 3000);
+      }
     }
-    </script>
-
+  </script>
 </body>
