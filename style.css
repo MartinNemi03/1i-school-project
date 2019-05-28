@@ -220,3 +220,55 @@ ul {
     -moz-transform: rotate(360deg);
   }
 }
+
+/* easter egg ve streamerech, kde stačí kliknout na reálné jméno nějakého streamera a něco se stane */
+
+.letterSpaceAnim {
+   animation: letter-space 3s ease;
+  -webkit-animation: letter-space 3s ease;
+  -moz-animation: letter-space 3s ease;
+}
+
+@keyframes letter-space {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: yellow;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
+
+@-webkit-keyframes letter-space {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: yellow;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
+
+
+@-moz-keyframes letter-space {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: yellow;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
+

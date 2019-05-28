@@ -31,40 +31,92 @@
       <div class="col-md-10">
         <div class="media">
           <div class="media-left">
-            <img src="../img/agraelus.jpg" alt="Agraelus" class="media-img">
+            <img src="../img/agraelus.jpg" alt="Agraelus" id="agrImg" class="media-img">
           </div>
           <div class="media-body">
             <h4 class="media-heading">Agraelus <a href="https://www.twitch.tv/agraelus" target="_blank"><span class="platform-icon"><img src="../img/twitch_logo.png"></span></a></h4>
             <blockquote>
-            <p class="media-text">Agraelus, vlastním jménem Vojtěch Fišar je převážně streamer na platformě Twitch, ale též natáčí na YouTube. Na Twitchi je to jeden z nejsledovanějších českých streamerů, proto se mu taky nazývá Tvář českého Twitche s 250+ tisíci sledovateli.</p>
-            </blockquote>
+            <p class="media-text">Agraelus, vlastním jménem <span onclick="easteregg('agraelus');" title="*klik* :thinking:" onmouseover="this.style.fontStyle = 'italic';" onmouseout="this.style.fontStyle = 'normal';" id="agrText">Vojtěch Fišar</span> je převážně streamer na platformě Twitch, ale též natáčí na YouTube. Na Twitchi je to jeden z nejsledovanějších českých streamerů, proto se mu taky nazývá Tvář českého Twitche s 250+ tisíci sledovateli.</p>
+            </blockquote>                                                                          
           </div>
         </div>
         <div class="media">
           <div class="media-left">
-            <img src="../img/arcadebulls.jpg" alt="ArcadeBulls" class="media-img">
+            <img src="../img/arcadebulls.jpg" alt="ArcadeBulls" id="bullImg" class="media-img">
           </div>
           <div class="media-body">
             <h4 class="media-heading">ArcadeBulls <a href="https://www.twitch.tv/arcadebulls" target="_blank"><span class="platform-icon"><img src="../img/twitch_logo.png"></span></a></h4>
             <blockquote>
-            <p class="media-text">ArcadeBulls, vlastním jménem Oldřich Šterba je streamer a moderátor herního pořadu RE-PLAY. Mezi českými streamery patří na pozici jednoho z těch kvalitnějších, avšak nemá takovou sledovanost jako Agraelus.</p>
+            <p class="media-text">ArcadeBulls, vlastním jménem <span onclick="easteregg('arcade');" title="*klik* :thinking:" onmouseover="this.style.fontStyle = 'italic';" onmouseout="this.style.fontStyle = 'normal';" id="bullText">Oldřich Šterba</span> je streamer a moderátor herního pořadu RE-PLAY. Mezi českými streamery patří na pozici jednoho z těch kvalitnějších, avšak nemá takovou sledovanost jako Agraelus.</p>
             </blockquote>
           </div>
         </div>
         <div class="media">
           <div class="media-left">
-            <img src="../img/ninja.jpg" alt="Ninja" class="media-img">
+            <img src="../img/ninja.jpg" alt="Ninja" id="ninjaImg" class="media-img">
           </div>
           <div class="media-body">
-            <h4 class="media-heading">Ninja <a href="https://www.twitch.tv/ninja" target="_blank"><span class="platform-icon"><img src="../img/twitch_logo.png"></span></a></h4>
+            <h4 class="media-heading">Ninja <a href="https://www.twitch.tv/ninja" id="ninjaImg" target="_blank"><span class="platform-icon"><img src="../img/twitch_logo.png"></span></a></h4>
             <blockquote>
-            <p class="media-text">Ninja, vlastním jménem Richard Tyler Blevins je streamer, který patří mezi světovou špičku co se týče streamování na platformě Twitch. Proslavil se svým hraním hry Fortnite, díky které explodoval v populárnosti po jeho hře s umělcem Drakem.</p>
+            <p class="media-text">Ninja, vlastním jménem <span onclick="easteregg('ninja');" title="*klik* :thinking:" onmouseover="this.style.fontStyle = 'italic';" onmouseout="this.style.fontStyle = 'normal';" id="ninjaText">Richard Tyler Blevins</span> je streamer, který patří mezi světovou špičku co se týče streamování na platformě Twitch. Proslavil se svým hraním hry Fortnite, díky které explodoval v populárnosti po jeho hře s umělcem Drakem.</p>
             </blockquote>
           </div>
         </div>
       </div>
       <div class="col-md-1"></div>
     </div>
+    
+    <script>
+    function easteregg(id) {
+      if (id === "agraelus") {
+        var img = document.getElementById("agrImg");
+        var text = document.getElementById("agrText");
+        
+        text.setAttribute("class", "letterSpaceAnim");
+        setTimeout(function() {
+            img.src = "../img/agraelus-2.jpg";   
+          }, 500);
+        setTimeout(function() {
+            img.src = "../img/agraelus.jpg";   
+          }, 2000);  
+        setTimeout(function() {
+            text.setAttribute("class", "");  
+          }, 3000);
+      }
+      
+      if (id === "arcade") {
+        var img = document.getElementById("bullImg");
+        var text = document.getElementById("bullText");
+        
+        text.setAttribute("class", "letterSpaceAnim");
+        setTimeout(function() {
+            img.src = "../img/arcadebulls-2.jpg";   
+          }, 500);
+        setTimeout(function() {
+            img.src = "../img/arcadebulls.jpg";   
+          }, 2000);  
+        setTimeout(function() {
+            text.setAttribute("class", "");  
+          }, 3000);
+      }
+      
+      if (id === "ninja") {
+        var img = document.getElementById("ninjaImg");
+        var text = document.getElementById("ninjaText");
+        
+        text.setAttribute("class", "letterSpaceAnim");
+        setTimeout(function() {
+            img.src = "https://media.giphy.com/media/SG5paY6WxH6Ki2lWys/200w_d.gif";   
+          }, 500);
+        setTimeout(function() {
+            img.src = "../img/ninja.jpg";   
+          }, 2000);  
+        setTimeout(function() {
+            text.setAttribute("class", "");  
+          }, 3000);
+      }
+    }
+    </script>
         
     <footer>
         <div class="text-center">
