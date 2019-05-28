@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 @import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
   background-color: #333333;
@@ -114,6 +115,36 @@ ul {
   font-weight: bold;
 }
 
+/* streameři aka aby se nám vojta vešel na stránku :LULW: */
+
+.media-img {
+  width: 176px;
+  border: 2px solid black;
+  border-radius: 5px;    
+}
+
+.media-heading {
+  font-size: 42px;
+}
+
+.media-text {
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.platform-icon {
+  background-color: #6441A4;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.platform-icon img {
+  height: 22px;
+  margin-bottom: 5px;
+}
+
 /* spodní text ve footru, který stejnak nikdo nečte */
 
 .footer-text {
@@ -135,6 +166,23 @@ ul {
   .btn {
     padding: 4px;
     font-size: 11px;
+  }
+  
+  .media-img {
+    width: 110px;
+  }
+  
+  .media-heading {
+   font-size: 32px;
+  }
+  
+  .media-text {
+   font-size: 14px;
+  }
+  
+  .platform-icon img {
+    height: 16px;
+    margin-bottom: 5px;
   }
 }
 
