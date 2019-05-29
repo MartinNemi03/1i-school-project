@@ -32,8 +32,6 @@
     </div>
   </header>
 
-  <!-- Tady jsem napsal o 3 nejpopulárnějších platformách z mého pohledu, i když je jich jako řepky na poli. Z mého pohledu používám hlavně Twitch, proto jsem napsal hodně hlavně o Twitchi, protože Twitch > Mixer > YouTube, ale to je čistě můj názor ohledně platforem. -->
-
   <div class="container">
     <div class="row text-left">
       <div class="col-md-1"></div>
@@ -147,12 +145,10 @@
     function logoRotate(plat) {
       if (plat === "twitch") {
         var logo = document.getElementById("twitch_logo");
-        console.log("jedu");
 
         logo.setAttribute("class", "logoRotateAnim");
         setTimeout(function() {
-          logo.setAttribute("class", "");
-          console.log("nejedu");    
+          logo.setAttribute("class", "");   
         }, 3000);
       }
 
